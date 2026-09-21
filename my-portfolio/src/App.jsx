@@ -1,7 +1,5 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+import myPhoto from './assets/amos.jpeg'
 import './App.css'
 
 function App() {
@@ -11,22 +9,33 @@ function App() {
     <>
       <section id="center">
         <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+          <img
+            src={myPhoto}
+            className="base"
+            width="170"
+            height="179"
+            alt="Amos Kingsley"
+          />
+
         </div>
+
         <div>
-          <h1>Amos Kingsley</h1>
+          <h1>AMOS KINGSLEY</h1>
+
           <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+            Welcome to my little corner of the web. Hi, I’m Amos Kingsley — a passionate tech 
+            enthusiast exploring the world of software development. 
+            I enjoy turning ideas into clean, practical digital experiences 
+            and building projects that challenge me to learn, create, and grow.
           </p>
         </div>
+
         <button
           type="button"
           className="counter"
           onClick={() => setCount((count) => count + 1)}
         >
-          Count is {count}
+          Learning Progress: {count}
         </button>
       </section>
 
@@ -37,76 +46,64 @@ function App() {
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#documentation-icon"></use>
           </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
+
+          <h2>What I'm Learning</h2>
+
+          <p>
+            I'm currently building a strong foundation in programming,
+            web development, databases, and object-oriented programming.
+          </p>
+
           <ul>
             <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
+              <a href="#">
+                C++ & OOP
               </a>
             </li>
+
             <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
+              <a href="#">
+                SQL & Databases
               </a>
             </li>
           </ul>
         </div>
+
         <div id="social">
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#social-icon"></use>
           </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
+
+          <h2>My Journey</h2>
+
+          <p>
+            I'm learning by doing. From writing my first programs to
+            building projects with C++, SQL, HTML, CSS, JavaScript,
+            and React, I'm taking things one step at a time.
+          </p>
+
           <ul>
             <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
+              <a href="#">
+                💻 Building projects
               </a>
             </li>
+
             <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
+              <a href="#">
+                📚 Learning new concepts
               </a>
             </li>
+
             <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
+              <a href="#">
+                🧠 Solving problems
               </a>
             </li>
+
             <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
+              <a href="#">
+                🚀 Improving every day
               </a>
             </li>
           </ul>
@@ -114,7 +111,19 @@ function App() {
       </section>
 
       <div className="ticks"></div>
-      <section id="spacer"></section>
+
+      <section id="spacer">
+        <h2>My Goal</h2>
+
+        <p>
+          To keep learning, keep building, and eventually become
+          a skilled software developer.
+        </p>
+
+        <p>
+          I'm just getting started. Let's go! 🚀
+        </p>
+      </section>
     </>
   )
 }

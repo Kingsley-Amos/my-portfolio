@@ -1,30 +1,25 @@
 import './App.css'
-import Hero from './components/Hero'
-import NextStep from './components/NextStep'
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import StudentRegistration from './pages/StudentRegistration'
+import PersonalPortfolio from './pages/PersonalPortfolio'
+
 function App() {
   return (
-    <>
-      <Hero />
+    <Routes>
+      <Route path="/" element={<Home />} />
 
-      <div className="ticks"></div>
+      <Route
+        path="/student-registration"
+        element={<StudentRegistration />} 
+      />
 
-   <NextStep />
-
-      <div className="ticks"></div>
-
-      <section id="spacer">
-        <h2>My Goal</h2>
-
-        <p>
-          To keep learning, keep building, and eventually become
-          a skilled software developer.
-        </p>
-
-        <p>
-          I'm just getting started. Let's go! 🚀
-        </p>
-      </section>
-    </>
+      <Route
+        path="/personal-portfolio"
+        element={<PersonalPortfolio />}
+      />
+    </Routes>
   )
 }
+
 export default App

@@ -1,73 +1,93 @@
-   export default function NextStep()
-{
-    return (
-        <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
+export default function NextStep() {
+  return (
+    <section id="next-steps">
 
-          <h2>What I'm Learning</h2>
+      {/* What I'm Learning */}
+      <div id="docs">
 
-          <p>
-            I'm currently building a strong foundation in programming,
-            web development, databases, and object-oriented programming.
-          </p>
+        <svg className="icon" role="presentation" aria-hidden="true">
+          <use href="/icons.svg#documentation-icon"></use>
+        </svg>
 
-          <ul>
-            <li>
-              <a href="#">
-                C++ & OOP
-              </a>
-            </li>
+        <h2>What I'm Learning</h2>
 
-            <li>
-              <a href="#">
-                SQL & Databases
-              </a>
-            </li>
-          </ul>
-        </div>
+        <p>
+          I'm building a strong foundation in programming, web development,
+          databases, and object-oriented programming while applying what I
+          learn through practical projects.
+        </p>
 
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
+        <ul>
+          <li>
+            <a href="#projects">
+              C++ & OOP
+            </a>
+          </li>
 
-          <h2>My Journey</h2>
+          <li>
+            <a href="#projects">
+              SQL & Databases
+            </a>
+          </li>
 
-          <p>
-            I'm learning by doing. From writing my first programs to
-            building projects with C++, SQL, HTML, CSS, JavaScript,
-            and React, I'm taking things one step at a time.
-          </p>
+          <li>
+            <a href="#projects">
+              HTML & CSS
+            </a>
+          </li>
 
-          <ul>
-            <li>
-              <a href="#">
-                💻 Building projects
-              </a>
-            </li>
+          <li>
+            <a href="#projects">
+              JavaScript & React
+            </a>
+          </li>
+        </ul>
 
-            <li>
-              <a href="#">
-                📚 Learning new concepts
-              </a>
-            </li>
+      </div>
 
-            <li>
-              <a href="#">
-                🧠 Solving problems
-              </a>
-            </li>
 
-            <li>
-              <a href="#">
-                🚀 Improving every day
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    )
-}        
+      {/* My Journey */}
+      <div id="social">
+
+        <svg className="icon" role="presentation" aria-hidden="true">
+          <use href="/icons.svg#social-icon"></use>
+        </svg>
+
+        <h2>My Journey</h2>
+
+        <p>
+          I'm learning by doing. From writing my first programs to building
+          projects with C++, SQL, HTML, CSS, JavaScript, and React, each
+          project gives me an opportunity to learn, solve problems, and grow.
+        </p>
+
+        <ul>
+          <li>
+            <a href="#projects">
+              💻 Building projects
+            </a>
+          </li>
+
+          <li>
+            <a href="#projects">
+              📚 Learning new concepts
+            </a>
+          </li>
+
+          <li>
+            <a href="#projects">
+              🧠 Solving problems
+            </a>
+          </li>
+          <li>
+            <a href="#projects">
+              🚀 Improving every day
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </section>
+  )
+}

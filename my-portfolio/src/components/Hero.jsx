@@ -1,39 +1,33 @@
 import myPhoto from '../assets/amos.jpeg'
-import { useState } from 'react'
-export default function Hero()
-{
-const[count, setCount] = useState(0)   
-return(
+
+export default function Hero() {
+  return (
     <section id="center">
-        <div className="hero">
-          <img
-            src={myPhoto}
-            className="base"
-            width="170"
-            height="179"
-            alt="Amos Kingsley"
-          />
+      <div className="hero">
+        <img
+          src={myPhoto}
+          className="base"
+          width="170"
+          height="170"
+          alt="Amos Kingsley"
+        />
+      </div>
 
-        </div>
+      <div>
+        <h1>AMOS KINGSLEY</h1>
 
-        <div>
-          <h1>AMOS KINGSLEY</h1>
+        <h2>Software Development Enthusiast</h2>
 
-          <p>
-            Welcome to my little corner of the web. Hi, I’m Amos Kingsley — a passionate tech 
-            enthusiast exploring the world of software development. 
-            I enjoy turning ideas into clean, practical digital experiences 
-            and building projects that challenge me to learn, create, and grow.
-          </p>
-        </div>
+        <p>
+          I'm exploring software development through C++, SQL, HTML, CSS,
+          JavaScript, and React. I enjoy turning ideas into practical digital
+          experiences and building projects that help me learn, create, and grow.
+        </p>
+      </div>
 
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Learning Progress: {count}
-        </button>
-        </section>
-      )
-}     
+      <a href="#projects" className="counter">
+        Explore My Projects →
+      </a>
+    </section>
+  )
+}

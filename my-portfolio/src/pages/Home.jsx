@@ -204,6 +204,38 @@ export default function Home() {
           </strong>
         </p>
       </section>
+      <div className="ticks"></div>
+
+      {/* Contact */}
+      <section id="contact" className="section">
+        <div className="section-heading">
+          <span className="section-label">GET IN TOUCH</span>
+          <h2>Contact Me</h2>
+          <p>
+            Reach out to me through any of the contact details below.
+          </p>
+        </div>
+
+        <div className="contact-info">
+          <p>
+            <strong>Email:</strong>{' '}
+            <a href="mailto:kymos2006@gmail.com">
+              kymos2006@gmail.com
+            </a>
+          </p>
+
+          <p>
+            <strong>Phone:</strong>{' '}
+            <a href="tel:0257418655">
+              0257418655
+            </a>
+          </p>
+
+          <p>
+            <strong>Location:</strong> Ghana
+          </p>
+        </div>
+      </section>
     </main>
   )
 }
